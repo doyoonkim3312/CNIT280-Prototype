@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>How to Append HTML Code to a Div using Javascript</title> 
+    <style> 
+        body { 
+            text-align: center; 
+              
+            padding: 5%; 
+        } 
+        h1{ 
+            color:green; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <div id="add_to_me"> 
+        <h1>Edit Patient Information</h1> 
+        <form>
+	<table align="center">
+  		<tr>
+		    <td><label for="fname">First name:</label></td>
+  		    <td><input type="text" id="fname" name="fname" value="John"></td>
+  		</tr>
+		<tr>
+		    <td><label for="lname">Last name:</label></td>
+  		    <td><input type="text" id="lname" name="lname" value="Doe"></td>
+		</tr>
+		<tr>
+		    <td><label for="address">Address:</label></td>
+  		    <td><input type="text" id="address" name="address" value="401 Grant Street"></td>
+		</tr>
+	</table>
+	</form>
+    <button onclick="addCode()">Update</button> 
+   </div> 
+    
+<script> 
+        function addCode() { 
+            document.getElementById("add_to_me").innerHTML +=  
+              "<table align='center' border='1'><tr><td>First name:</td><td>John</td></tr><tr><td>Last name:</td><td>Doe</td></tr><tr><td>Address:</td><td>701 W Stadium Ave</td></tr></table>"; 
+        } 
+    </script> 
+</body> 
+  
+</html> 
