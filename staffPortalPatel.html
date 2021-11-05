@@ -4,22 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>Glasses Acquisition System (GAS)</title>
-<script type="text/javascript">
-function userLogIn() {
-	const user = document.getElementById('loginId').value;
-	if (user == "aBorbi") {
-		location.href='staffPortalBorbi.html';
-	} else if (user == "jPatel") {
-		location.href='staffPortalPatel.html';
-	} else if (user == "rCosillo") {
-		location.href='staffPortalCosillo.html'
-	} else {
-		location.href='staffPortal2.html';
-	}
-
-}
-
-</script>
 </head>
 
 <body>
@@ -42,12 +26,27 @@ function userLogIn() {
 
 		<div id="content">
         	<h1>Staff Portal </h1>
+					<h2>Welcome Back, Jaineel Patel</h2>
+					<p>&nbsp;</p>
+					<h3>Recent Alert: 'November 5, 2021: [Promotion Applied; OCT-2021] has been approved'</h5>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
         	<form action ="">
 <table>
-<tr><td><h3>Login:</h3></td> <td> <input id="loginId" type="text" /></td></tr>
-<tr><td><h3>Password:</h3></td> <td> <input id="password" type="password" /> </td></tr>
-<tr><td></td><td><input type ="button" value = "Enter Staff Portal" onclick="userLogIn()"></td></tr>
-<tr><td><h4>Problem with Login?:</h4></td><td>Please contact to your supervisor </td></tr>
+<tr><td></td><td><input type ="button" value = "Manage Venues" onclick="location.href='manageVenues1.html';"></td>
+<tr>
+	<td></td><td><input type ="button" value = "Review Reservation Record" onclick="#';"></td>
+</tr>
+<tr>
+	<td></td><td><input type ="button" value = "Review Monthly Report" onclick="location.href='pendingReportList.html';"></td>
+</tr>
+<tr>
+	<td></td><td><input type ="button" value = "Submit Monthly Report to Management" onclick="location.href='ConfirmedReports.html';"></td>
+</tr>
+<tr>
+	<td></td><td><input type ="button" value = "Review Support Request" onclick="location.href='manageSupportRequested.html';"></td>
+</tr>
+</tr>
 </table>
 </form>
        	  <p>&nbsp;</p>
