@@ -4,6 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>Glasses Acquisition System (GAS)</title>
+<script type="text/javascript">
+function secondValidation() {
+	window.alert("System: Second Level Access Permission has been identified.")
+	location.href="reservationRecord1.html"
+}
+</script>
 </head>
 
 <body>
@@ -35,7 +41,7 @@
 <table>
 <tr><td></td><td><input type ="button" value = "Manage Venues" onclick="location.href='manageVenues1.html';"></td>
 <tr>
-	<td></td><td><input type ="button" value = "Review Reservation Record" onclick="#';"></td>
+	<td></td><td><input type ="button" value = "Review Reservation Record" onclick="secondValidation()"></td>
 </tr>
 <tr>
 	<td></td><td><input type ="button" value = "Review Monthly Report" onclick="location.href='pendingReportList.html';"></td>
